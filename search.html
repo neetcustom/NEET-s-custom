@@ -58,7 +58,7 @@
         console.log('Google Sheets API 클라이언트 초기화 완료.');
         return gapi.client.sheets.spreadsheets.values.batchGet({
           spreadsheetId: '108gLlEpTaKI4TsHt50TdQaM-Ip8IEsADowwTAhcp2dk',
-          ranges: ['戦績表示!R4:O', '戦績表示!B5:B', '戦績表示!R3'] // 세 번째 범위 추가
+          ranges: ['戦績表示!S4:W', '戦績表示!B5:B', '戦績表示!R3'] // 세 번째 범위 추가
         });
       }).then(response => {
         const data = response.result.valueRanges;
