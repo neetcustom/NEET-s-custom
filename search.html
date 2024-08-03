@@ -64,7 +64,7 @@
         const data = response.result.valueRanges;
         globalData = data[0].values; // 첫 번째 범위 데이터를 전역 변수에 저장
         const comboBoxData = data[1].values; // 두 번째 범위 데이터를 콤보 박스용으로 저장
-        j3Value = data[2].values[0][0]; // 세 번째 범위(J3 셀 값) 저장
+        r3Value = data[2].values[0][0]; // 세 번째 범위(J3 셀 값) 저장
 
         console.log('Google Sheets에서 데이터 가져옴:', globalData);
         sortTable(2, 'desc'); // 기본적으로 L열(인덱스 2) 기준으로 내림차순 정렬
